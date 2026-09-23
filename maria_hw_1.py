@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
 from math import radians, sqrt, cos
 
-print("This programm finds the 3rd side of a triangle")
-c = 0  # we're looking for
+print("Это программа, которая находит третью сторону треугольника")
+c = 0  # треться сторона
 
-print('Enter the 1st side')
-a = float(input())  # 1st side
-print('Enter the 2nd side')
-b = float(input())  # 2nd side
-print('Enter the angle in degrees')
-adegr = float(input())  # angle
-arad = radians(adegr)  # degr into rad
+print('Введите длину первой стороны треугольника')
+a = float(input())
+print('Введите длину второй стороны треугольника')
+b = float(input())
+print('Введите угол между стоонами В ГРАДУСАХ')
+adegr = float(input())
+arad = radians(adegr)
 if a > 0:
     if b > 0:
         c = ((a**2) + (b**2)) - 2 * a * b * cos(arad)
         c = sqrt(c)
-        print('The 3rd side is ', c)
+        print('Третья сторона равна ', c)
     else:
-      print("Such triangle does not exist. Please, try again by entering values that are above 0")
+      print("Такого треугольника не существует. Попробуйте снова и вводите данные больше 0")
 else:
-    print("Such triangle does not exist. Please, try again by entering values that are above 0")
+    print("Такого треугольника не существует. Попробуйте снова и введите данные больше 0")
