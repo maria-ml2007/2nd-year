@@ -1,0 +1,44 @@
+# -*- coding: utf-8 -*-
+print('Введите число от 0 до 99')
+n = input()
+chk = '0123456789'
+
+sng = 'ноль', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять'
+tns = 'одиннадцать', 'двенадцать', 'тринадцать', 'четырнадцать', 'пятнадцать', 'шестнадцать', 'семнадцать', 'восемнадцать', 'девятнадцать'
+doz = 'десять', 'двадцать', 'тридцать', 'сорок', 'пятьдесят', 'шестьдесят', 'семдесят', 'восемдесят', 'девяносто'
+
+if n in chk:
+    n = int(input())
+    frst = n // 10  #десятки
+    scnd = n % 10  #единицы
+    if chk == str:
+        print('Введите число!')
+    elif n > 99 or n < 0:
+        print('Данное число выходит за диапазон! Введите значение от 0 до 99!')
+    elif n < 10 and n >= 0:
+        print(sng[n])
+    elif n > 10 and n < 100:
+        if n < 20:
+            indcor = scnd - 1
+            print(tns[indcor])
+        elif n > 19:
+            indcor1 = frst - 1
+            print(doz[indcor1], sng[scnd])
+        elif n == 10:
+            print(doz[0])
+elif n not in chk:
+    print('Введите число')
+
+        
+
+
+#if n == sng:
+#    print(sng[n])
+#elif scnd == 0:
+#   print(doz[frst])
+    
+#elif frst == 1:
+#    print(tns[frst - 1])
+#elif frst != 1:
+#    print(doz[frst + 1], sng[scnd + 1])
+
