@@ -11,9 +11,7 @@ if n in chk:
     n = int(input())
     frst = n // 10  #десятки
     scnd = n % 10  #единицы
-    if chk == str:
-        print('Введите число!')
-    elif n > 99 or n < 0:
+    if n > 99 or n < 0:
         print('Данное число выходит за диапазон! Введите значение от 0 до 99!')
     elif n < 10 and n >= 0:
         print(sng[n])
