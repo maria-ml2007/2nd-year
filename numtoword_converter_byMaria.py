@@ -28,17 +28,3 @@ if n in chk:
             print(doz[0])
 elif n not in chk:
     print('Введите число')
-
-        
-
-
-#if n == sng:
-#    print(sng[n])
-#elif scnd == 0:
-#   print(doz[frst])
-    
-#elif frst == 1:
-#    print(tns[frst - 1])
-#elif frst != 1:
-#    print(doz[frst + 1], sng[scnd + 1])
-
